@@ -1,0 +1,46 @@
+
+html,body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+}
+  
+.container{
+  height: 100%;
+  align-content: center;
+}
+
+.jumbotron{
+  margin: 0px;
+}
+
+nav .navbar{
+  position: fixed;
+}
+
+.barraNavegacion{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.barraNavegacion:hover{
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+}
+ 
+ul:hover{
+  color: #555;
+}
+
+#turismo{
+  background-color: rgb(136, 136, 136);
+}
+
+.img{
+  width: 20%;
+  position: absolute;
+}
+
+

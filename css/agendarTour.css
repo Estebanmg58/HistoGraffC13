@@ -1,0 +1,14 @@
+.barraNavegacion{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.barraNavegacion:hover{
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+}
+ 
+ul:hover{
+  color: #555;
+}

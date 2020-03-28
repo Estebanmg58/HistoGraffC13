@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/agendarTour.css">
+        <link rel="icon" type="img/png" href="Imagenes/favicon.png">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head> 
+        <script src="js/validar.js"></script>   
+        <title>HistoGraff</title>
+    </head>
+    <body style="background-color: rgba(236, 233, 234, 1);">
+        <header>
+            <nav class="navbar navbar-light bg-light navbar-fixed-top">
+                <!--Logo-->
+                <a class="navbar-brand" href="Index.html">
+                    <img src="Imagenes/HistoGraff.png" width="43" height="35" class="d-inline-block align-top" alt="">
+                    HistoGraff
+                </a>
+                <ul>
+                    <!--Barra de navegacion-->
+                    <a class="barraNavegacion" href="PhpCod/Galeria.php">Graffitis</a>
+                    <a class="barraNavegacion" href="agendarTour.html">Agendar Tour</a>
+                    <a class="barraNavegacion" href="LoginAdmin.html">Administrador</a>
+                </ul>   
+        </header>
+        <br>
+        <div class="container">
+            <form name="formulario" action="PhpCod/agendarTour.php" method="POST" onsubmit="return validar();">
+                <center><h1>Agendar Tour</h1></center>
+                <br>
+                <div class="form-group">                
+			        <label >Identificación</label>
+                    <input class="form-control" type="number" id="id" name="id" placeholder="Número de identificación">
+                </div>
+                <div class="form-group">
+                    <label >Nombre solicitante</label>
+                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Nombres">
+                </div>
+                <div class="form-group">
+			        <label>Apellidos solicitante</label>
+                    <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Apellidos" >
+                </div>
+                <div class="form-group">
+			        <label >Teléfono móvil</label>
+                    <input class="form-control" type="tel" id="cel" name="cel" placeholder="Teléfono" >
+                </div>
+                <div class="form-group">
+			        <label >E-mail</label>
+                    <input class="form-control" type="text" id="email" name="email" placeholder="E-mail" >
+                </div>
+                <div class="form-group">
+			        <label >Cantidad de personas</label>
+                    <input class="form-control" type="number" id="cantidad" name="cantidad" placeholder="Cantidad" >
+                </div>
+                <div class="form-group">
+			        <label >Fecha del tour</label>
+                    <input class="form-control" type="date" id="fecha" name="fecha" placeholder="Día" >    
+                </div>
+                <div class="form-group">
+			        <label >Hora del tour</label>
+                    <input class="form-control" type="time" id="hora" name="hora" placeholder="Hora" >
+                </div>
+                <div class="form-group">
+			        <label >Tipo de pago</label>
+			        <select name="pago" >
+			            <option value="Efectivo">Efectivo</option>
+			            <option value="Paypal">Paypal</option>
+		            </select>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LflOuMUAAAAAGkZVQUjWKf8AMRVB_8zaJWi6vnJ"></div>
+                <center> <input class="asignar btn btn-primary" type="submit" name="asignar" value="Agendar"></center>
+                <br>
+            </form>
+        </div>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+    </body>
+</html>
