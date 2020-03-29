@@ -8,7 +8,7 @@
     	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     	<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/LoginAdmin.css">
-		<script src="js/validarLogin.js"></script>
+		<script src="js/validarLoginGuia.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
 	<body style="background: url(Imagenes/escalas.jpg); background-repeat: no-repeat; background-size: 100% 125%;" >
@@ -18,21 +18,21 @@
 			<div class="d-flex justify-content-center h-100">
 				<div class="card">
 					<div class="card-header">
-						<center><h3>Iniciar Sesion Administrador</h3></center>
+						<center><h3>Iniciar Sesión Guía</h3></center>
 					</div>
 					<div class="card-body">
-						<form method="POST" action="PhpCod/LoginAdmin.php" onsubmit="return validarLogin();">
+						<form method="POST" action="PhpCod/LoginGuia.php" onsubmit="return validarLoginGuia();">
 							<div class="input-group form-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text"><i class="fas fa-user"></i></span>
 								</div>
-								<input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuario">
+								<input type="text" id="usuarioGuia" name="usuarioGuia" class="form-control" placeholder="Usuario">
 							</div>
 							<div class="input-group form-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text"><i class="fas fa-key"></i></span>
 								</div>
-								<input type="password" id="clave" name="contraseña"  class="form-control" placeholder="Contraseña">
+								<input type="password" id="claveGuia" name="claveGuia"  class="form-control" placeholder="Contraseña">
 							</div>
 							<center><input type="submit" value="Iniciar" class="btn login_btn" style="width: 100%; background-color:#253BFF;"></center>
 						</form>
