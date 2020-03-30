@@ -15,8 +15,10 @@ session_start();
         header("Location: Administrador.php");
     }
     else{
-        echo "<script>alert('Usuario y/o contraseña incorrectos');
-                    window.history.go(-1);
+        echo "
+        <script>
+        alert('Usuario y/o contraseña incorrectos');
+        window.history.go(-1);
         </script>";
     }
     

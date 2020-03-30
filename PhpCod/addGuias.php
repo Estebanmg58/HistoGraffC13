@@ -22,13 +22,15 @@
     <script src="../js/validarGuias.js"></script>
     <title>HistoGraff</title>
 </head>
-<body>
-    <div class="container p-5">
+<body style="background-color: rgba(236, 233, 234, 1);">
+    
+<div style="position : absolute; left : 50%; padding:5%" class="container">
         <div class="row">
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
                         <form action="guiasInsert.php" method="POST" id="addGuias" onsubmit="return validarGuias();">
+                            <center><legend>Ingresar nuevos guias</legend></center>
                             <div class="form-group">
                                 <label>Identificacion Guia</label>
                                 <input type="number"  id="id" name="iden" placeholder="Identificación" class="form-control">

@@ -41,7 +41,6 @@
 
     <center><a href="addGuias.php" class="btn btn-info">Agregar guía</a></center>
     <br>
-    <div class="col-md-7">
         <table class="table table-responsive table-striped">
             <thead>
                 <tr>
@@ -82,7 +81,6 @@
                 ?>
             </tbody>
         </table>
-    </div>
     
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>

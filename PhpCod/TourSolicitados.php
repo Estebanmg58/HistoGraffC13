@@ -84,7 +84,9 @@
         </button> 
     </td>
     <td>
-    <a href="#staticBackdrop?id=<?php echo $mostrar['cod_solicitud'];?>" class="btn btn-success">Asignar</a>
+    <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#staticBackdrop1">
+    <a style="color:white" data-target="#staticBackdrop1" class="asignar" href="#staticBackdrop1?id=<?php echo $mostrar['cod_solicitud'];?>" data-id="<?php echo $mostrar['cod_solicitud'];?>">Asignar</a>
+    </button>
     </td>
   </tr>
     <?php
@@ -93,7 +95,7 @@
     </tbody>
 </table>
 
-<!-- Modal -->
+<!-- Modal editar tour -->
 
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -148,7 +150,49 @@
           </form>
           </div>
           </div>              
-          </div>  
+          </div> 
+
+    <!--Modal asignar tour a los Guias-->
+
+          <div class="modal fade" id="staticBackdrop1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="staticBackdropLabel">Asigna un Guia Turistico</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="editar" method="POST">
+      <div class="modal-body">
+
+        <select class="browser-default custom-select">
+        <option selected>Selecciona Guia</option>
+        <?php
+        
+        include ("conexion.php");
+        
+        $quer="SELECT NombreGuia,ApellidoGuia FROM guia";
+        $resul=mysqli_query($conex,$quer);
+
+        while($list=mysqli_fetch_array($resul)){
+          ?>
+          <option ><?php echo $list ['NombreGuia']; echo " "; echo $list ['ApellidoGuia'];?> <?php
+
+        }
+        ?>
+        <option>
+        
+        </select>
+       
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="submit btn btn-primary">Enviar</button>
+          </div>
+          </form>
+          </div>
+          </div> 
+          </div> 
     <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/toursolicitado.js"></script>

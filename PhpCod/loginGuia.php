@@ -16,7 +16,7 @@ session_start();
     }
     else{
         echo "<script>alert('Usuario y/o contraseña incorrectos');
-                    
+                    window.history.go(-1);
         </script>";
     }
     

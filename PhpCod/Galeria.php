@@ -22,6 +22,7 @@
                     <a class="barraNavegacion" href="#">Graffitis</a>
                     <a class="barraNavegacion" href="../agendarTour.html">Agendar Tour</a>
                     <a class="barraNavegacion" href="../LoginAdmin.html">Administrador</a>
+                    <a class="barraNavegacion" href="../LoginGuia.html">Guia</a>
                 </ul>   
             </nav>
         </header>

@@ -8,9 +8,9 @@ include ('conexion.php');
     $query="INSERT INTO graffiti (codGraffiti,NombreGraffiti,DescripcionGraffiti,fotoGraffiti)VALUES('','$name','$desc','$foto')";
     $result=mysqli_query($conex,$query);
     if(!$result){
-        die ("Error al ingresar graffiti");
+        die ("Error al ingresar grafiti");
     }
-    echo "<script>alert('El tour a sido solicitado con exito');
+    echo "<script>alert('El grafiti a sido ingresado con exito');
     window.history.go(-1)</script>"
 
 

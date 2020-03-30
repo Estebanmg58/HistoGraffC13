@@ -29,7 +29,7 @@
 		  </a>
 		  <ul>
         <!--Botones de navegacion-->
-        <a class="barraNavegacion" href="addGuias.php">Guias</a>
+        <a class="barraNavegacion" href="Guias.php">Guias</a>
         <a class="barraNavegacion" href="#">Editar Galeria</a>
 		    <a class="barraNavegacion" href="TourSolicitados.php">Tours Solicitados</a>
 		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesion</a>
@@ -45,7 +45,7 @@
       <div class="card-body">
 
       <form id="formulario" method="post" action="addGraffiti.php" enctype="multipart/form-data">
-        <center><legend>Insertar nuevos graffitis</legend></center>
+        <center><legend>Insertar nuevos grafitis</legend></center>
       <div class="modal-body">
         <input type="hidden" type="text" name="id" id="id">
       </div>
@@ -59,7 +59,7 @@
       </div>
 
       <div class="form-group">
-        <label for="foto">Foto de el graffiti</label>
+        <label for="foto">Foto de el grafiti</label>
         <input class="form-control" type="file" name="foto" id="foto" require>
       </div>
 
@@ -79,12 +79,12 @@
       <thead>
 
       <tr>
-        <td>Codigo Graffiti</td>
-        <td>Nombre Graffiti</td>
+        <td>Codigo Grafiti</td>
+        <td>Nombre Grafiti</td>
         <td>Descripcion</td>
         <td>Foto</td>
-        <td>Editar Graffiti</td>
-        <td>Eliminar Graffiti</td>
+        <td>Editar Grafiti</td>
+        <td>Eliminar Grafiti</td>
       </tr>
 
       </thead>
@@ -127,7 +127,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="staticBackdropLabel">Actualizar Graffiti</h4>
+        <h4 class="modal-title" id="staticBackdropLabel">Actualizar Grafiti</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -147,7 +147,7 @@
       </div>
 
       <div class="form-group">
-        <label for="foto">Foto de el graffiti</label>
+        <label for="foto">Foto de el grafiti</label>
         <input class="form-control" type="file" name="foto" id="foto" >
       </div>
 

@@ -31,7 +31,7 @@
 		  <ul>
         <!--Botones de navegacion-->
         <a class="barraNavegacion" href="">Tours Realizados</a>
-		    <a class="barraNavegacion" href="#">Tours Pendientes</a>
+		    <a class="barraNavegacion" href="tourPendientes.php">Tours Pendientes</a>
         <a class="barraNavegacion" href="salirSesionGuia.php">Cerrar Sesion</a>
 		  </ul>   
 	  </nav>
