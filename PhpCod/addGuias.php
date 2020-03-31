@@ -32,20 +32,20 @@
                         <form action="guiasInsert.php" method="POST" id="addGuias" onsubmit="return validarGuias();">
                             <center><legend>Ingresar nuevos guias</legend></center>
                             <div class="form-group">
-                                <label>Identificacion Guia</label>
+                                <label>Identificación guía</label>
                                 <input type="number"  id="id" name="iden" placeholder="Identificación" class="form-control">
                             </div>
                             <div class="form-group">
-                                <Label>Nombre Guia</Label>
+                                <Label>Nombre guía</Label>
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Apellido Guia</label>
+                                <label>Apellido guía</label>
                                 <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label>Telefono</label>
-                                <input type="text" id="telefono" name="telefono" placeholder="Telefono" class="form-control">
+                                <label>Teléfono</label>
+                                <input type="text" id="telefono" name="telefono" placeholder="Teléfono" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Email</label>

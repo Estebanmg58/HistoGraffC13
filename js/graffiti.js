@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $('.btnBorrar').on('click',function(e){
-        if(confirm('Esta seguro que desea elimar el graffiti')){
+        if(confirm('¿Esta seguro que desea eliminar el grafiti?')){
             var id = $(this).attr('id');
             var update = "";
             $.ajax({

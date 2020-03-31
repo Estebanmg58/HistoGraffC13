@@ -22,10 +22,10 @@
 		  </a>
 		  <ul>
         <!--Botones de navegacion-->
-        <a class="barraNavegacion" href="Guias.php">Guias</a>
-        <a class="barraNavegacion" href="Graffiti.php">Editar Galeria</a>
-		    <a class="barraNavegacion" href="#">Tours Solicitados</a>
-		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesion</a>
+        <a class="barraNavegacion" href="Guias.php">Guías</a>
+        <a class="barraNavegacion" href="Graffiti.php">Editar Galería</a>
+		    <a class="barraNavegacion" href="#">Tour Solicitados</a>
+		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesión</a>
 		  </ul>   
 	  </nav>
     <br>
@@ -35,19 +35,19 @@
     <thead>
     <tr>
 
-        <td>Cod_solicitud</td>
-        <td>id_solicitante</td>
+        <td>Cod solicitud</td>
+        <td>Id solicitante</td>
         <td>Nombres</td>
         <td>Apellidos</td>
-        <td>Telefono</td>
+        <td>Teléfono</td>
         <td>Email</td>
         <td>Cantidad</td>
-        <td>Fecha_Tour</td>
-        <td>Hora_Tour</td>
-        <td>Metodo_Pago</td>  
+        <td>Fecha Tour</td>
+        <td>Hora Tour</td>
+        <td>Metodo Pago</td>  
         <td>Borrar registro</td>
-        <td>Actualiza registro</td>
-        <td>Asignar Guia</td>
+        <td>Actualizar registro</td>
+        <td>Asignar Guía</td>
             
     </tr>
   </thead>
@@ -158,7 +158,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="staticBackdropLabel">Asigna un Guia Turistico</h4>
+        <h4 class="modal-title" id="staticBackdropLabel">Asignar un Guía Turístico</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -167,7 +167,7 @@
       <div class="modal-body">
 
         <select class="browser-default custom-select">
-        <option selected>Selecciona Guia</option>
+        <option selected>Seleccionar Guía</option>
         <?php
         
         include ("conexion.php");

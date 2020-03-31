@@ -19,14 +19,14 @@
                 </a>
                 <ul>
                     <!--Botones de navegacion-->
-                    <a class="barraNavegacion" href="#">Graffitis</a>
+                    <a class="barraNavegacion" href="#">Grafitis</a>
                     <a class="barraNavegacion" href="../agendarTour.html">Agendar Tour</a>
                     <a class="barraNavegacion" href="../LoginAdmin.html">Administrador</a>
-                    <a class="barraNavegacion" href="../LoginGuia.html">Guia</a>
+                    <a class="barraNavegacion" href="../LoginGuia.html">Guía</a>
                 </ul>   
             </nav>
         </header>
-            <center><h1>Galeria de grafftis de la comuna 13</h1></center><br>
+            <center><h1>Galería de grafitis de la comuna 13</h1></center><br>
             <?php
             include ("conexion.php");
             $query="SELECT * FROM graffiti";

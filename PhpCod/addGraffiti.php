@@ -10,8 +10,9 @@ include ('conexion.php');
     if(!$result){
         die ("Error al ingresar grafiti");
     }
-    echo "<script>alert('El grafiti a sido ingresado con exito');
-    window.history.go(-1)</script>"
+    echo "<script>alert('El grafiti ha sido ingresado con exito');
+    window.history.go(-1)
+    </script>";
 
 
 ?>

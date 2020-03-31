@@ -30,10 +30,10 @@
 		</a>
 		<ul>
             <!--Botones de navegacion-->
-            <a class="barraNavegacion" href="#">Guias</a>
+            <a class="barraNavegacion" href="#">Guías</a>
             <a class="barraNavegacion" href="Graffiti.php">Editar Galeria</a>
-		    <a class="barraNavegacion" href="TourSolicitados.php">Tours Solicitados</a>
-		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesion</a>
+		    <a class="barraNavegacion" href="TourSolicitados.php">Tour Solicitados</a>
+		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesión</a>
 		</ul>   
 	</nav>
     <br>

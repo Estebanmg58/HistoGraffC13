@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.btnBorrar').on('click',function(e){
-        if(confirm('Esta seguro que desea eliminar el registro')){
+        if(confirm('¿ Esta seguro que desea eliminar el registro ?')){
             
                 var id = $(this).attr('id');
                 var update = "";
@@ -11,7 +11,7 @@ $(document).ready(function(){
                     data: {id:id,update:update},
                     success: function (data) {
                         if(data.ok != null){
-                            swal("Borrado!", "Correctamente!", "success");
+                            swal("Borrado!", "correctamente!", "success");
                             setTimeout(function(){
                                 var url = "/histograffC13/PhpCod/guias.php";
                                 $(location).attr('href',url);
@@ -19,7 +19,7 @@ $(document).ready(function(){
                         }
                         if(data.error != null){
                            
-                            swal("Error!", "No Se Pudo Eliminar!", "error");
+                            swal("Error!", "no se pudo eliminar!", "error");
                         }
                     },
                     error:function(err){

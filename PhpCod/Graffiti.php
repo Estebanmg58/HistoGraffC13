@@ -29,10 +29,10 @@
 		  </a>
 		  <ul>
         <!--Botones de navegacion-->
-        <a class="barraNavegacion" href="Guias.php">Guias</a>
-        <a class="barraNavegacion" href="#">Editar Galeria</a>
-		    <a class="barraNavegacion" href="TourSolicitados.php">Tours Solicitados</a>
-		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesion</a>
+        <a class="barraNavegacion" href="Guias.php">Guías</a>
+        <a class="barraNavegacion" href="#">Editar Galería</a>
+		    <a class="barraNavegacion" href="TourSolicitados.php">Tour Solicitados</a>
+		    <a class="barraNavegacion" href="salirSesion.php">Cerrar Sesión</a>
 		  </ul>   
 	  </nav>
     <br>
@@ -51,11 +51,11 @@
       </div>
 
       <div class="form-group"> 
-        <input class="form-control" type="text" name="nombreGraffiti"  id="nombreGraffiti" placeholder="nombre" require>
+        <input class="form-control" type="text" name="nombreGraffiti"  id="nombreGraffiti" placeholder="Nombre" required>
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" name="descripcion" id="descripcion"  placeholder="descripcion" require></textarea>
+        <textarea class="form-control" name="descripcion" id="descripcion"  placeholder="Descripción" require></textarea>
       </div>
 
       <div class="form-group">
@@ -79,9 +79,9 @@
       <thead>
 
       <tr>
-        <td>Codigo Grafiti</td>
+        <td>Código Grafiti</td>
         <td>Nombre Grafiti</td>
-        <td>Descripcion</td>
+        <td>Descripción</td>
         <td>Foto</td>
         <td>Editar Grafiti</td>
         <td>Eliminar Grafiti</td>
@@ -139,11 +139,11 @@
         <input type="hidden" type="text" name="id" id="id">
 
       <div class="form-group"> 
-        <input class="form-control" type="text" name="nombreGraffiti"  id="nombreGraffiti" placeholder="nombre">
+        <input class="form-control" type="text" name="nombreGraffiti"  id="nombreGraffiti" placeholder="Nombre">
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" name="descripcion" id="descripcion"  placeholder="descripcion" ></textarea>
+        <textarea class="form-control" name="descripcion" id="descripcion"  placeholder="Descripción" ></textarea>
       </div>
 
       <div class="form-group">

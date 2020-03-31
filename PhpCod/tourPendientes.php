@@ -17,9 +17,9 @@
 		  </a>
 		  <ul>
         <!--Botones de navegacion-->
-        <a class="barraNavegacion" href="">Tours Realizados</a>
-		    <a class="barraNavegacion" href="#">Tours Pendientes</a>
-        <a class="barraNavegacion" href="salirSesionGuia.php">Cerrar Sesion</a>
+        <a class="barraNavegacion" href="">Tour Realizados</a>
+		    <a class="barraNavegacion" href="#">Tour Pendientes</a>
+        <a class="barraNavegacion" href="salirSesionGuia.php">Cerrar Sesión</a>
 		  </ul>   
 	  </nav>
 
@@ -28,16 +28,16 @@
       <table class="table table-responsive table-striped" >
     <thead>
     <tr>
-        <td>Cod_solicitud</td>
-        <td>id_solicitante</td>
+        <td>Cod solicitud</td>
+        <td>Id solicitante</td>
         <td>Nombres</td>
         <td>Apellidos</td>
-        <td>Telefono</td>
+        <td>Teléfono</td>
         <td>Email</td>
         <td>Cantidad</td>
-        <td>Fecha_Tour</td>
-        <td>Hora_Tour</td>
-        <td>Metodo_Pago</td>  
+        <td>Fecha Tour</td>
+        <td>Hora Tour</td>
+        <td>Método Pago</td>  
     </tr>
   </thead>
   <br>

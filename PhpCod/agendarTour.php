@@ -56,7 +56,7 @@ if (!$captcha){
     </script>";
     echo $resultado;
 } else if ($arr['success'] && $resultado){
-    echo "<script> alert ('El captcha fue validado correctamente, y el tour se solicitó con éxito');
+    echo "<script> alert ('El tour se solicitó con éxito');
     window.history.go(-1);
     </script>";
 
@@ -79,7 +79,7 @@ try {
     
     $mail->isHTML(true);                                  
     $mail->Subject = 'La solicitud del tour ha sido exitosa';
-    $mail->Body    = 'Señor(a) ' .$nombre. ', cordial saludo. Este correo es enviado para la confirmación de su tour el dia ' .$fecha. ' a las ' .$hora;
+    $mail->Body    = 'Señor(a) ' .$nombre. ', cordial saludo. Este correo es enviado para la confirmación de su tour el día ' .$fecha. ' a las ' .$hora;
 
     $mail->send();
 } catch (Exception $e) {

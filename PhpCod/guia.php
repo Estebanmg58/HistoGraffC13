@@ -30,9 +30,9 @@
 		  </a>
 		  <ul>
         <!--Botones de navegacion-->
-        <a class="barraNavegacion" href="">Tours Realizados</a>
-		    <a class="barraNavegacion" href="tourPendientes.php">Tours Pendientes</a>
-        <a class="barraNavegacion" href="salirSesionGuia.php">Cerrar Sesion</a>
+        <a class="barraNavegacion" href="">Tour Realizados</a>
+		    <a class="barraNavegacion" href="tourPendientes.php">Tour Pendientes</a>
+        <a class="barraNavegacion" href="salirSesionGuia.php">Cerrar Sesión</a>
 		  </ul>   
 	  </nav>
     <br>

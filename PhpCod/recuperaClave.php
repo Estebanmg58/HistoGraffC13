@@ -17,7 +17,7 @@ if(!empty($_POST))
     
     if(!isEmail($email))
     {
-        $errors[] = "Debe ingresar un correo electronico valido";
+        $errors[] = "Debe ingresar un correo electronico válido";
     }
     
     if(emailExiste($email))
@@ -27,12 +27,12 @@ if(!empty($_POST))
         $cuerpo = "Hola $nombre: <br /><br />Se ha solicitado un reinicio de contraseña. <br/><br/>Para restaurar la contraseña, visita la siguiente direccion: <a href='confirmaContraseña.php'</a>";
         
         if(enviarEmail($email, $nombre, $asunto, $cuerpo)){
-            echo "Hemos enviado un correo electronico a las direcion $email para restablecer tu password.<br />";
-            echo "<a href='LoginAdmin.html' >Iniciar Sesion</a>";
+            echo "Hemos enviado un correo electrónico a las dirección $email para restablecer tu password.<br />";
+            echo "<a href='LoginAdmin.html' >Iniciar Sesión</a>";
             exit;
         }
         } else {
-        $errors[] = "La direccion de correo electronico no existe";
+        $errors[] = "La dirección de correo electrónico no existe";
     }
 }
 
@@ -54,7 +54,7 @@ function mandaCorreo($mail,$data=''){
     $mail->isHTML(true);                                  
     $mail->Subject = 'Recuperar contraseña';
     $mail->Body    = '<div>
-    <p><strong>Su contraseña a sido modificada con exito</strong></p>
+    <p><strong>Su contraseña a sido modificada con éxito</strong></p>
     <p><strong>Su nueva clave es:</strong></p>
     <p><strong>Clave: '. $data['Clave'] .'</strong></p>
     </div>
