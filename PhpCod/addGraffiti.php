@@ -11,7 +11,7 @@ include ('conexion.php');
         die ("Error al ingresar grafiti");
     }
     echo "<script>alert('El grafiti ha sido ingresado con exito');
-    window.history.go(-1)
+    window.history.go(-1);
     </script>";
 
 

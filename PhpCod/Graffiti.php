@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/Graffiti.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="../js/graffiti.js"></script>
+    <script src="../js/validarGraffiti.js"></script>
     <title>HistoGraff</title>
 </head>
 <body>
@@ -44,23 +45,23 @@
       <div class="card">
       <div class="card-body">
 
-      <form id="formulario" method="post" action="addGraffiti.php" enctype="multipart/form-data">
+      <form id="formulario" method="post" action="addGraffiti.php" enctype="multipart/form-data" onsubmit="return validarGraffiti();">
         <center><legend>Insertar nuevos grafitis</legend></center>
       <div class="modal-body">
         <input type="hidden" type="text" name="id" id="id">
       </div>
 
       <div class="form-group"> 
-        <input class="form-control" type="text" name="nombreGraffiti"  id="nombreGraffiti" placeholder="Nombre" required>
+        <input class="form-control" type="text" name="nombreGraffiti"  id="nombreGraffiti" placeholder="Nombre">
       </div>
 
       <div class="form-group">
-        <textarea class="form-control" name="descripcion" id="descripcion"  placeholder="Descripción" require></textarea>
+        <textarea class="form-control" name="descripcion" id="descripcion"  placeholder="Descripción"></textarea>
       </div>
 
       <div class="form-group">
         <label for="foto">Foto de el grafiti</label>
-        <input class="form-control" type="file" name="foto" id="foto" require>
+        <input class="form-control" type="file" name="foto" id="foto">
       </div>
 
         <button type="submit" id="submit" class="btn btn-primary">Guardar</button>
